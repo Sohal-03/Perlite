@@ -27,12 +27,6 @@ jobs:
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
-      - name: Docker meta
-        id: meta # you'll use this in the next step
-        uses: docker/metadata-action@v4
-        with:
-         images:
-          sohal03/perlite
       - name: Push
         uses: docker/metadata-action@v4
       - name: Build container image
