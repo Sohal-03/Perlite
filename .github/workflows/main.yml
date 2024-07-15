@@ -24,7 +24,7 @@ jobs:
       - name: Build and push
         uses: docker/build-push-action@v4
         with:
-         context: .   # Or the path to your Dockerfile directory
+         context: web   # Or the path to your Dockerfile directory
          platforms: linux/amd64,linux/arm/v7
          push: true   
          tags: v1
