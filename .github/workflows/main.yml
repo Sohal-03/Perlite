@@ -28,6 +28,6 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
       - name: Build container image
-        run: docker build -t sohal03/perlite .  # Replace placeholders with your details
+        run: docker build -t sohal03/perlite   # Replace placeholders with your details
       - name: Push container image to Docker Hub
         run: docker push sohal03/perlite  # Replace placeholders with your details
