@@ -31,7 +31,8 @@ jobs:
       - name: Build and push
         uses: docker/build-push-action@v4
         with:
-          context: ./web/Dockerfile   # Specify the directory containing your Dockerfile
+          context: ./web   # Specify the directory containing your Dockerfile
+          file: ./web/Dockerfile  # Explicitly specify the Dockerfile location
           platforms: linux/amd64,linux/arm/v7
           push: true   
-          tags: sohal03/perlite:nginx1
+          tags: sohal03/perlite:v1
