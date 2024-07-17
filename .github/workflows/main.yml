@@ -36,6 +36,6 @@ jobs:
           push: true   
           tags: sohal03/perlite:nginx_v1
       - name: Build container image
-        run: docker build -t sohal03/perlite /web  # Replace placeholders with your details
+        run: docker build -t sohal03/perlite ./web  # Replace placeholders with your details
       - name: Push container image to Docker Hub
         run: docker push sohal03/perlite  # Replace placeholders with your details
